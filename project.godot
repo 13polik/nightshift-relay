@@ -5,6 +5,8 @@ config_version=5
 
 config/name="NIGHT SHIFT Relay"
 run/main_scene="res://relay_main.tscn"
+; platform health checks send plain HTTP; WebSocketPeer would log an engine error for each one
+run/disable_stderr=true
 
 [display]
 

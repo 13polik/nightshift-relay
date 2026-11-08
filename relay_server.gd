@@ -55,7 +55,7 @@ func _ready() -> void:
 			port = int(a.substr(7))
 	var err := server.listen(port, "*")
 	if err != OK:
-		printerr("RELAY cannot listen on %d: %s" % [port, error_string(err)])
+		print("RELAY ERROR cannot listen on %d: %s" % [port, error_string(err)])
 		get_tree().quit(1)
 		return
 	print("RELAY listening on port %d (protocol %d)" % [port, PROTOCOL])
