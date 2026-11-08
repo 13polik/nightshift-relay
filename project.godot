@@ -1,0 +1,16 @@
+; NIGHT SHIFT relay server - standalone headless project (no game code, no assets).
+config_version=5
+
+[application]
+
+config/name="NIGHT SHIFT Relay"
+run/main_scene="res://relay_main.tscn"
+
+[display]
+
+window/size/viewport_width=64
+window/size/viewport_height=64
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

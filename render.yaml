@@ -1,0 +1,6 @@
+# One-click deploy on Render (free web service works; WebSockets are supported).
+services:
+  - type: web
+    name: nightshift-relay
+    runtime: docker
+    plan: free
